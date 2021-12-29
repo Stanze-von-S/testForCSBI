@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import './App.css';
 import GlobalContext from '../../context/globalContext';
-import { useReducer, useEffect } from 'react';
+import { useReducer } from 'react';
 import reducer from '../../reducer/reducer';
 import Search from '../Search/Search';
 import CustomerContainer from '../CustomerContainer/CustomerContainer';
@@ -12,10 +12,7 @@ function App() {
 
   const [state, dispatch] = useReducer(reducer, initialState);  
 
-  useEffect(() => {
-    dispatch({ type: 'INIT_STATE'})
-  }, []);
-
+  
   return (        
     <div className="App">
       <GlobalContext.Provider value={{ state, dispatch }}>
