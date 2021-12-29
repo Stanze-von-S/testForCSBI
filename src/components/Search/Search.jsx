@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react';
 import GlobalContext from '../../context/globalContext';
 import './Search.css';
 
-function Search(props) {
+function Search() {
   
   const { dispatch } = useContext(GlobalContext);
   const searchInput = useRef('');

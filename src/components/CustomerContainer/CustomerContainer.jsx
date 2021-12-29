@@ -3,7 +3,7 @@ import GlobalContext from '../../context/globalContext';
 import Customer from '../Customer/Customer';
 import './CustomerContainer.css';
 
-function CustomerContainer(props) {
+function CustomerContainer() {
 
   const { state } = useContext(GlobalContext);
 

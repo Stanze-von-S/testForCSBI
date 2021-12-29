@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import './App.css';
 import GlobalContext from '../../context/globalContext';
 import { useReducer, useEffect } from 'react';
@@ -17,10 +18,10 @@ function App() {
 
   return (        
     <div className="App">
-     <GlobalContext.Provider value={{ state, dispatch }}>
+      <GlobalContext.Provider value={{ state, dispatch }}>
         <Search />
         <CustomerContainer /> 
-        </GlobalContext.Provider>  
+      </GlobalContext.Provider>  
     </div>    
   );
 }
