@@ -1,0 +1,25 @@
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer__header {
+  min-width: 30%;
+}
+
+.customer__button {
+  width: 150px;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 10px;
+  color: white;
+}
+
+.customer__button_status_await {
+  background-color: red;
+}
+
+.customer__button_status_work {
+  background-color: green;
+}

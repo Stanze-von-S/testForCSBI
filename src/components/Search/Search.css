@@ -1,0 +1,18 @@
+.search__block {
+  width: 60%;
+}
+
+.search__button {
+  width: 200px;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 10px;
+  background-color: blue;
+  color: white;
+}
+
+.search__input {
+  width: 30%;
+  padding: 5px;
+  font-size: 20px;
+}
