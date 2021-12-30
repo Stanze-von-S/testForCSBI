@@ -21,8 +21,8 @@ const reducer = (state, action) => {
      
     case 'SEARCH_CUSTOMERS': {
       const customersList = [...state.customers];
-      const searchList = customersList.filter((customer) => (customer.firstName.includes(action.payload) ||
-        customer.lastName.includes(action.payload) || customer.patronymic.includes(action.payload)))
+      const searchList = customersList.filter((customer) => (customer.firstName.toLowerCase().includes(action.payload.toLowerCase()) ||
+        customer.lastName.toLowerCase().includes(action.payload.toLowerCase()) || customer.patronymic.toLowerCase().includes(action.payload.toLowerCase())))
       return { ...state, customers: [...searchList] };
     }
 
